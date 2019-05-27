@@ -1,7 +1,9 @@
 <template>
     <li>
         {{todo.text}}
-        <button>done</button>
+        <button
+            v-on:click="$emit('remove',todo.id)"
+        >done</button>
     </li>
 </template>
 
@@ -18,5 +20,7 @@
 
 <style scoped>
     li{
+        margin: 5px auto;
+        text-align: left;
     }
 </style>

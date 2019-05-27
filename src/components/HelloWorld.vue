@@ -1,11 +1,25 @@
 <template>
-    <div class="hello">
+    <div>
+        first name:<input type="text" v-model="firstName"/>
+        last name:<input type="text" v-model="lastName"/>
+        full name:{{fullName}}
     </div>
 </template>
 
 <script>
     export default {
-        name: 'HelloWorld'
+        name: 'HelloWorld',
+        data: function () {
+            return {
+                firstName: '',
+                lastName: ''
+            };
+        },
+        computed: {
+            fullName() {
+                return this.firstName + ' ' + this.lastName
+            }
+        }
     }
 </script>
 

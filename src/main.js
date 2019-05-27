@@ -5,8 +5,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+require('./mock')
+
 new Vue({
   router,
   store,
   render: h => h(App)
+
 }).$mount('#app')

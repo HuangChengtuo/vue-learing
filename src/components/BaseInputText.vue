@@ -1,9 +1,11 @@
 <template>
-    <input
-            type="text"
-            v-bind:value="value"
-            v-on="listener"
-    />
+    <div>
+        <input
+                type="text"
+                v-bind:value="value"
+                v-on="listener()"
+        />
+    </div>
 </template>
 
 <script>
@@ -15,9 +17,9 @@
                 default: 'sleep'
             }
         },
-        computed: {
+        methods: {
             listener() {
-                return{
+                return {
                     ...this.$listeners,
                     input: event => this.$emit('input', event.target.value)
                 }
