@@ -3,6 +3,8 @@
         <div id="nav">
             <router-link to="/home">Home</router-link>
             |
+            <router-link to="/bitcoin">Bitcoin</router-link>
+            |
             <router-link to="/news">News</router-link>
             |
             <router-link to="/todo">Todo</router-link>

@@ -1,19 +1,14 @@
 <template>
   <div id="Home">
-    <h1>bitcoin price</h1>
-    <div v-for="(coin,key) in info"
-         v-bind:key="key"
-    >
-      {{coin.description}}:
-      <span v-html="coin.symbol"></span>
-      {{coin.rate_float}}
-    </div>
+    {{data}}
+    <br/>
+    <button @click="getData">get</button>
+    <button v-on:click="addData">add</button>
   </div>
 </template>
 
 <script>
   import store from '@/store'
-  import axios from 'axios'
 
   export default {
     name: 'Home',
@@ -21,12 +16,21 @@
     components: {},
     data: function () {
       return {
-        info: null
+        data: ''
       };
     },
-    mounted() {
-      axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-          .then(res => (this.info = res.data.bpi))
+    computed:{
+      show(){
+        return store.state.count
+      }
+    },
+    methods: {
+      getData() {
+        this.data = this.$store.getters.getCount
+      },
+      addData() {
+        store.commit('increment',3)
+      }
     }
   }
 </script>
