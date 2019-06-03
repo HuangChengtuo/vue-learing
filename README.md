@@ -1,7 +1,7 @@
 # vue-learning
 
-### Home
-练习草稿
+### ShoppingCart
+vuex购物车
 
 ### Bitcoin
 axios获取比特币汇率

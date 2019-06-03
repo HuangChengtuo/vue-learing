@@ -29,7 +29,5 @@
         .then(res => (this.info = res.data.bpi))
     }
   }
-  // eslint-disable-next-line no-console
-  console.log("store.count:" + store.getters.getCount)
 </script>
 

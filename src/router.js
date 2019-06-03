@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import ShoppingCart from './views/ShoppingCart.vue'
 import Todo from './views/Todo.vue'
 import notFound from "@/views/notFound";
 import News from '@/views/News'
@@ -13,12 +13,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: {name: 'home'}
+      redirect: {name: 'shoppingCart'}
     },
     {
-      path: '/home',
-      name: 'home',
-      component: Home
+      path: '/shoppingCart',
+      name: 'shoppingCart',
+      component: ShoppingCart
 
     },
     {
