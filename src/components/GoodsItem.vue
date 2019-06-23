@@ -43,10 +43,12 @@
     height: 160px;
     justify-content: space-between;
   }
-  #detail{
+
+  #detail {
     width: 200px;
   }
-  img{
+
+  img {
     height: 100%;
   }
 

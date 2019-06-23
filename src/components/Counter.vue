@@ -1,20 +1,20 @@
 <template>
-    <div>
-        {{count}}
-    </div>
+  <div>
+    {{count}}
+  </div>
 </template>
 
 <script>
-    import store from '@/store'
+  import store from '@/store'
 
-    export default {
-        name: "Counter",
-        computed: {
-            count() {
-                return store.state.count
-            }
-        }
+  export default {
+    name: "Counter",
+    computed: {
+      count() {
+        return store.state.count
+      }
     }
+  }
 </script>
 
 <style scoped>

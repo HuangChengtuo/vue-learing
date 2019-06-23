@@ -19,12 +19,12 @@ axios.interceptors.response.use(function (response) {
 export function fetch(url, params) {
   return new Promise((resolve, reject) => {
     axios.post(url, params)
-        .then(response => {
-          resolve(response.data);
-        })
-        .catch((error) => {
-          reject(error);
-        })
+      .then(response => {
+        resolve(response.data);
+      })
+      .catch((error) => {
+        reject(error);
+      })
   })
 }
 

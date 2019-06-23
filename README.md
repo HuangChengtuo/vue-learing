@@ -1,6 +1,7 @@
 # vue-learning
 
 ## 学习Vue时写的项目
+预览：https://huangchengtuo.github.io/vue-learning/
 
 ### ShoppingCart
 vuex购物车
