@@ -1,29 +1,15 @@
 # vue-learning
 
-## Project setup
-```
-pnpm install
-```
+## 学习Vue时写的项目
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
-```
+### ShoppingCart
+vuex购物车
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
+### Bitcoin
+axios获取比特币汇率
 
-### Run your tests
-```
-pnpm run test
-```
+### News
+mockjs生成随机新闻
 
-### Lints and fixes files
-```
-pnpm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Todo
+备忘录
