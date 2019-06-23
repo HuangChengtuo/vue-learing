@@ -1,26 +1,24 @@
 <template>
-    <div>
-        first name:<input type="text" v-model="firstName"/>
-        last name:<input type="text" v-model="lastName"/>
-        full name:{{fullName}}
-    </div>
+  <div>
+    <input
+            type="checkbox"
+            v-bind:checked="checked"
+            v-on:change="$emit('change', $event.target.checked)"
+    >
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'HelloWorld',
-        data: function () {
-            return {
-                firstName: '',
-                lastName: ''
-            };
-        },
-        computed: {
-            fullName() {
-                return this.firstName + ' ' + this.lastName
-            }
-        }
+  export default {
+    name: 'HelloWorld',
+    model: {
+      prop: 'checked',
+      event: 'change'
+    },
+    props: {
+      checked: Boolean
     }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

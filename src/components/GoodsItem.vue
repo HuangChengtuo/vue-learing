@@ -4,9 +4,9 @@
     <div id="detail">
       <p>{{item.name}}</p>
       <p>￥{{item.price}}</p>
-      <button v-on:click="addItem(item.id)">+</button>
-      {{item.quantity}}
       <button @click="removeItem(item.id)">-</button>
+      {{item.quantity}}
+      <button v-on:click="addItem(item.id)">+</button>
     </div>
 
   </div>

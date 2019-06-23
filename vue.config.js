@@ -1,6 +1,6 @@
 module.exports = {
-    lintOnSave: false,
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/vue-learning/'
-        : '/'
+  lintOnSave: false,
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-learning/'
+    : '/xx/'
 }
