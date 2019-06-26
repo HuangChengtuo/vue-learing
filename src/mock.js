@@ -10,4 +10,4 @@ for (let i = 0; i < 10; i++) {
   }
   data.push(temp);
 }
-Mock.mock('hct.com', 'post', data);
+Mock.mock('hct.com', data);

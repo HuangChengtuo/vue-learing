@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import axios from '../axios'
+  import axios from 'axios'
 
   export default {
     name: "News",
@@ -28,9 +28,10 @@
     },
     methods: {
       getData: function () {
-        axios.mockData('hct.com').then(res => {
+        axios.get('hct.com').then(res => {
           // eslint-disable-next-line no-console
-          this.dataShow = res;
+          this.dataShow = res.data;
+
           // for (let i = 0; i < this.$refs.test.children.length; i++) {
           //     this.$refs.test.children[i].style.background = `url(${this.dataShow[i]})`;
           // }
