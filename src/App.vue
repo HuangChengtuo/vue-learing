@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/shoppingCart">ShoppingCart</router-link>
+      <router-link to="/echarts" >ECharts</router-link>
+      |
+      <router-link to="/shopping_cart">ShoppingCart</router-link>
       |
       <router-link to="/bitcoin">Bitcoin</router-link>
       |

@@ -5,6 +5,7 @@ import Todo from './views/Todo.vue'
 import notFound from "@/views/notFound";
 import News from '@/views/News'
 import Bitcoin from '@/views/Bitcoin'
+import ECharts from '@/views/ECharts'
 
 Vue.use(Router)
 
@@ -14,10 +15,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: {name: 'shoppingCart'}
+      redirect: {name: 'echarts'}
     },
     {
-      path: '/shoppingCart',
+      path:'/echarts',
+      name:'echarts',
+      component:ECharts
+    },
+    {
+      path: '/shopping_cart',
       name: 'shoppingCart',
       component: ShoppingCart
 
