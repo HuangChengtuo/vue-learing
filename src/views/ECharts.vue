@@ -28,9 +28,12 @@
         myChart = echarts.init(document.getElementById('charts'), 'light');
         myChart.setOption({
           title: {
-            text: 'ECharts 入门示例'
+            text: this.$route.name
           },
           tooltip: {},
+          dataset:{
+            
+          },
           xAxis: {
             data: this.goods.item
           },

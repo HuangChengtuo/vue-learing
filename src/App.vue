@@ -11,11 +11,16 @@
       |
       <router-link to="/todo">Todo</router-link>
       |
-      <router-link to="/about">About</router-link>
+      <router-link v-bind:to="{name:'about',params:{text:'hello'}}">About</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+  export default {
+  }
+</script>
 
 <style>
   #app {

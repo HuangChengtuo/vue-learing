@@ -27,7 +27,7 @@
       this.getData()
     },
     methods: {
-      getData: function () {
+      getData() {
         axios.get('hct.com').then(res => {
           // eslint-disable-next-line no-console
           this.dataShow = res.data;

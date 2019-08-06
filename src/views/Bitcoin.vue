@@ -24,7 +24,11 @@
     },
     mounted() {
       axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-        .then(res => (this.info = res.data.bpi))
+        .then(res => {
+          this.info = res.data.bpi
+          console.log(res)
+        })
+
     }
   }
 </script>

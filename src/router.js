@@ -6,6 +6,8 @@ import notFound from "@/views/notFound";
 import News from '@/views/News'
 import Bitcoin from '@/views/Bitcoin'
 import ECharts from '@/views/ECharts'
+import About from '@/views/About'
+import store from '@/store'
 
 Vue.use(Router)
 
@@ -18,9 +20,9 @@ export default new Router({
       redirect: {name: 'echarts'}
     },
     {
-      path:'/echarts',
-      name:'echarts',
-      component:ECharts
+      path: '/echarts',
+      name: 'echarts',
+      component: ECharts
     },
     {
       path: '/shopping_cart',
@@ -46,10 +48,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: About
     },
     {
       path: '*',
@@ -58,3 +57,4 @@ export default new Router({
     }
   ]
 })
+

@@ -3,6 +3,9 @@
 ## 学习Vue时写的项目
 预览：https://huangchengtuo.github.io/vue-learning/
 
+### ECharts
+ECharts图表
+
 ### ShoppingCart
 vuex购物车
 
