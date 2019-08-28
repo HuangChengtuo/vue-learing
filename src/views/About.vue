@@ -5,10 +5,11 @@
 </template>
 <script>
   export default {
-    name: 'About',
     components: {},
     data() {
-      return {}
+      return {
+        games: {}
+      }
     }
   }
 </script>

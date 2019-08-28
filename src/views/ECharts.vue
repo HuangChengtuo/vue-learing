@@ -11,7 +11,6 @@
 
   let myChart
   export default {
-    name: "ECharts",
     data: function () {
       return {
         goods: {

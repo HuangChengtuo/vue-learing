@@ -17,7 +17,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: {name: 'echarts'}
+      redirect: {name: 'about'}
     },
     {
       path: '/echarts',
